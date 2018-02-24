@@ -1,0 +1,141 @@
+#canvas-container {
+  width: 300px;
+  height: 500px;
+  border:1px solid #000;
+  margin-left: 12px;
+  margin-top: 100px; 
+}
+#canvas-container2 {
+  width: 176px;
+  height: 253px;
+  box-shadow: 0 0 5px 1px black;
+  margin-left:58%;
+  margin-top:15px;
+  border: 5px solid transparent;
+}
+.second{
+  position:absolute;
+  right: 40%;
+  top: 53%;
+  width: 100px;
+  height: 130px;
+}
+.third{
+  width:130px;
+  height:190px;
+  position:absolute;
+  right: 42%;
+  top: 25%;
+}
+#canvas-container.over {
+  border: 5px dashed cyan;
+}
+#images img.img_dragging{
+  opacity: 0.4;
+}
+.block{
+  background-image: url("images/bg.jpg");
+  background-repeat: no-repeat;
+    background-attachment: fixed;
+     background-position: 37.9% 24%; 
+  width: 300px;
+  height: 500px;
+  box-shadow: 0 0 5px 1px black;
+  border: 5px solid transparent;
+  float: left;
+  margin-left: 600px;
+  margin-top:100px;
+}
+.set{
+  position:relative;
+  width: 300px;
+  height: 500px;
+  
+  margin-left: 40%;
+  float:left;
+}
+
+.myButton {
+  position: absolute;
+    
+  background-color:#585c59;
+  
+  border-radius:30px;
+  height: 25px;
+  width: 25px;
+  border:1px solid #5a755d;
+  
+  cursor:pointer;
+  color:#000;
+  font-family:Arial;
+  font-size:17px;
+  
+  text-decoration:none;
+
+  
+}
+.myButton:hover {
+  background-color:#6a6e68;
+}
+.myButton:active {
+  position:relative;
+  top:1px;
+}
+
+.myButton1{
+  right: 824px;
+    top: 106px;
+
+}
+.myButton1 > h5{
+
+  position: absolute;
+    right: -21px;
+    top: 2px;
+}
+.myButton2{
+  right: 824px;
+    top: 246px;
+}
+.myButton2 > h5{
+
+  position: absolute;
+    right: -21px;
+    top: 2px;
+}
+.myButton3{
+  right: 824px;
+    top: 386px;
+}
+.myButton3 > h5{
+
+  position: absolute;
+    right: -10px;
+    top: 2px;
+}
+button{
+  
+  background-color: white;
+  border: 1px dotted;
+  font-size: 30px;
+  height: 109px;
+  margin: 80px 23px 23px 23px;
+  width: 170px;
+}
+/* 
+Styles below based on  http://www.html5rocks.com/en/tutorials/dnd/basics/ 
+*/
+.London,.Paris,.Tokyo{
+  display: none;
+}
+/* Prevent the text contents of draggable elements from being selectable. */
+[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  /* Required to make elements draggable in old WebKit */
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+  cursor: move;
+}
